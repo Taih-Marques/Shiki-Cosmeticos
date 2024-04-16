@@ -1,0 +1,220 @@
+.destaque{
+    background-color: var(--cor-de-link);
+    padding: 0.5em;
+    text-align: center;
+}
+.destaque__negrito{
+    font-weight: 500;
+}
+.destaque__pague{
+    font-weight: 500;
+    background-color: var(--cor-de-fundo-destaque);
+    color: var(--preto);
+}
+.destaque__promocao{
+    color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+}
+.cabecalho__menu-hamburguer {
+    width: 18px;
+    height: 18px;
+    background-image: url("/assets/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer{
+    background-image: url("/assets/menu2.svg");
+    filter: invert(100%);
+}
+.container__botao:checked ~ .container__rotulo{
+    background: var(--cor-gradiente);
+}
+
+.cabecalho {
+    background-color: var(--cor-de-fundo-destaque);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0.3em;
+    width: 44px;
+    height: 44px;
+
+}
+
+.container__imagem-perfil2{
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    
+}
+.meu-perfil {  
+    background: var(--cor-de-fundo-destaque);
+    text-transform: lowercase;
+    font-family: var(--fonte-secundaria);
+    text-decoration:none;
+    color: var(--cor-de-fonte);
+}
+
+.container__imagem-logo {
+    width: 44px;
+    height: 44px;
+    padding: 1em;
+}
+.container__imagem-compras{
+    width: 55px;
+    height: 55px;
+    padding: 1em, 0;
+}
+.container__imagem-fav{
+    padding: 1em, 0%;
+}
+.container__titulo, .container__titulo--negrito{
+    font-family: var(--fonte-terciaria);
+    color:var(--cor-de-titulo);
+    font-size: 20px;
+    display: inline-block;
+    text-align: center
+}
+.container__titulo{
+    font-weight: 400;
+}
+.container__titulo--negrito{
+    font-weight: 700;
+}
+.lista-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    width: 60vw;
+    z-index: 1;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+    
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background: var(--cor-de-fundo-destaque);
+}
+
+.lista-menu__titulo {
+    color: var(--cor-de-titulo);
+    font-weight: 700;
+}
+.lista-menu__categorias{
+    background-color: var(--cor-de-fundo-destaque);
+    padding: 0.4em;
+}
+.lista-menu__link {
+    color: var(--cor-de-fonte);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+
+.container__botao {
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+.container__texto{
+    display: none;
+}
+.container__imagem-perfil{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .meu-perfil{
+        display: none;
+    }
+    .container__imagem-perfil{
+        display: block;
+    }
+    
+    .opcoes{
+        display: flex;
+        padding-top: 1em;
+
+    }
+    .opcoes__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+        color: var(--cor-de-titulo);
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--cor-de-titulo);
+    }
+    .container__imagem-fav{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item{
+        background: var(--cor-gradiente);
+        color: var(--cor-de-fonte);
+    }
+    .opcoes__item{
+        padding: 2em 1em;
+    }
+    .opcoes__item:hover{
+        background: var(--cor-gradiente);
+    }
+    .lista-menu__item:hover{
+        background: var(--cor-gradiente);
+    }
+    
+  
+}
+
+@media screen and (min-width: 1428px) {
+    .meu-perfil{
+        display: none;
+    }
+    .container__imagem-perfil{
+        display: block;
+    }
+    .container__texto{
+        display: block;
+    }
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-de-fonte);
+    }
+    .cabecalho{
+        padding: 0em 2em;
+    }
+    .opcoes{
+        margin-right: auto;
+    }
+  
+}
