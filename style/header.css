@@ -99,7 +99,7 @@
     display: none;
     top: 100%;
     width: 60vw;
-    z-index: 1;
+    z-index: 3;
 }
 
 .container__botao:checked~.lista-menu {
