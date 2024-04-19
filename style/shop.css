@@ -1,0 +1,138 @@
+.shop {
+    color: var(--cor-de-fonte);
+    background-color: var(--cor-de-fundo-destaque);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+
+}
+
+.precos-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "porcentagem preco-antigo"
+      "porcentagem preco-novo";
+  }
+  
+.p-em{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--preto);
+    background-color: rgb(131, 236, 131);
+    border-radius: 5px;
+    grid-area: porcentagem;
+    font-size: 12px;
+   
+}
+.p-sub{
+    color:gray;
+    font-size: 12px;
+    text-decoration-line:line-through;
+    grid-area: preco-antigo;
+    font-size: 10px;
+    
+}
+.p-b{
+    color: var(--cor-de-fonte);
+    grid-area: preco-novo;
+    font-size: 14px;
+}
+
+.card__descricao-imagem{
+    width: 50%;
+    
+}
+.texto-slide{
+    background-color: var(--cor-de-fundo);
+    padding: 1em;
+    box-sizing: border-box;
+}
+.descricao__titulo-produto{
+    font-size: .8125rem;
+    font-family: var(--fonte-terciaria);
+    line-height: .9375rem;
+}
+.descricao__texto-produto{
+    font-weight: 300;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    color: var(--preto);
+    display: -webkit-box;
+    font-size: .8125rem;
+    line-height: .9375rem;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+        border: white;
+    }
+    .swiper{
+        width: 90%;
+    }
+    .card2{
+        width: 50%;
+        margin: 2em auto;
+    }
+    .p-em{
+        font-size: 26px;
+    }
+    .p-sub{
+        font-size: 20px;
+    }
+    .p-b{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:1428px) {
+    .carrossel__container{
+        display: flex;
+        margin: 0 10vw 3em 10vw;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+    .swiper{
+        width: 70%;
+    }
+    
+    .descricao__titulo{
+        font-size: 32px;
+    }
+    .descricao__texto{
+        padding-top: 1em;
+        font-size: 16px;
+    }
+    .card__preco{
+        font-size: 26px;
+    }
+   .botao__ancora{
+    font-size: 18px;
+    padding: 0 1.6vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   }
+   .botao__ancora2{
+    padding: 0 4.9vw;
+   }
+    
+    
+}

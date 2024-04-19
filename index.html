@@ -61,7 +61,7 @@
             <label for="opcoes-menu" class="opcoes__rotulo">
                 <li class="opcoes__item">Categorias</li>
             </label>
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Meu
+            <li class="opcoes__item meu-perfil"><a href="#" class="opcoes__link">Meu
                     Perfil</a></li>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Departamentos</li>
@@ -107,11 +107,10 @@
             </a>
         </div>
     </header>
-    <section class="banner-carrossel">
+    <section class="banner-shop">
         <div class="container__banner">
             <input type="search" class="banner__pesquisa" placeholder="Busque seu produto" />
         </div>
-
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -140,11 +139,9 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
 
-        <div class="container__banner">
+        </div>
+        <div class="container__banner texto-banner">
             <p class="banner__texto">
                 <strong class="banner__texto-destaque"> "Love is in the air"</strong> <br>e as promoções da nossa seção
                 dos namorados também. <br> Viva
@@ -155,6 +152,282 @@
             </p>
         </div>
     </section>
+
+    <section class="categorias">
+        <!-- Slider main container -->
+        <div class="swiper-categories">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/secao/perfume-feminino.svg"
+                        alt="seção de produtos de perfumes femininos"><b class="etiqueta">Perfumes Femininos</b> </div>
+                <div class="swiper-slide"><img src="./assets/secao/perfume-masculino.svg"
+                        alt="seção de produtos de perfume masculinos"><b class="etiqueta">Perfumes Masculinos</b> </div>
+                <div class="swiper-slide"><img src="./assets/secao/banho.svg" alt="seção de produtos de banho"><b
+                        class="etiqueta">Corpo e Banho</b> </div>
+                <div class="swiper-slide"><img src="./assets/secao/cabelo.svg" alt="seção de produtos de cabelo"><b
+                        class="etiqueta">Cabelos</b> </div>
+                <div class="swiper-slide"><img src="./assets/secao/maquiagem.svg"
+                        alt="seção de produtos de maquiagem"><b class="etiqueta">Maquiagem</b>
+                </div>
+                <div class="swiper-slide"><img src="./assets/secao/skin-care.svg"
+                        alt="seção de produtos de pele e sink-care"><b class="etiqueta">Skincare</b> </div>
+                <div class="swiper-slide"><img src="./assets/secao/unha.svg" alt="seção de esmalte de unhas"><b
+                        class="etiqueta">Unhas</b> </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+        <div class="card card2">
+            <!-- primeira linha -->
+            <div class="card__descricao">
+                <!-- primeira coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Novidade na area</h3>
+                    <h2 class="descricao__titulo-produto">Verde Sereno: A Essência Revigorante de Aloe
+                        Vera</h2>
+                    <p class="descricao__texto">Na serenidade de um jardim tranquilo, nasce uma fragrância que celebra a
+                        natureza em sua forma mais pura. Apresentamos o novo oleo corporal Verde Sereno, uma ode à
+                        beleza
+                        calmante e revitalizante da Aloe Vera.<br></p>
+                </div>
+                <!-- segunda coluna -->
+                <img src="./assets/banners/produto3.svg" alt="produto aloe vera" class="card__descricao-img">
+            </div>
+            <!-- 2 linha -->
+            <div class="card__botoes">
+                <!-- 1ª coluna -->
+                <p class="card__preco"><br>R$79,90</p>
+                <ul class="botoes">
+                    <li class="botoes__item"> <img src="./assets/favoritos.svg" alt="favoritar produto"></li>
+                    <li class="botoes__item"> <img src="./assets/compras.svg" alt="colocar no carrinho o produto"></li>
+                </ul>
+                <!-- 2ªcoluna -->
+                <a href="#" class="botao__ancora botao__ancora2">Comprar agora!!</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="shop">
+        <h2 class="shop"> Descontos em destaques</h2>
+        <div class="shop__container">
+            <div class="swiper-shop">
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/base.svg" alt="base de pele" />
+                        <h2 class="descricao__titulo-produto">Introduzindo: RadianceBlend</h2>
+                        <p class="descricao__texto-produto">
+                            Desperte sua luminosidade interior com a nova base RadianceBlend, uma revolução na beleza
+                            que ilumina e aperfeiçoa sua pele instantaneamente.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">10%</em> <sub class="p-sub preco-antigo">R$89,00</sub>
+                            <b class="p-b preco-novo"> R$80,01</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/creme-hidratante.svg" alt="creme hidratante para rosto" />
+                        <h2 class="descricao__titulo-produto">Viva a Beleza Natural da Sua Pele: Renewal
+                        </h2>
+                        <p class="descricao__texto-produto">
+                            Seja parte da revolução da beleza. Desperte a radiância natural da sua pele com Radiance
+                            Renewal - o segredo para uma pele deslumbrante, todos os dias.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">20%</em> <sub class="p-sub preco-antigo">R$129,00</sub>
+                            <b class="p-b preco-novo"> R$103,20</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/gel-colageno.svg" alt="gel colageno para rosto" />
+                        <h2 class="descricao__titulo-produto">Revitalift Collagen Boost</h2>
+                        <p class="descricao__texto-produto">
+                            Não deixe que o tempo tire o brilho da sua pele. Com nosso Gel de Colágeno Facial, você pode
+                            restaurar e preservar sua beleza natural, revelando uma pele radiante e jovem em cada
+                            aplicação. Descubra o segredo para uma pele impecável e confie no poder do colágeno para
+                            transformar sua rotina de cuidados com a pele.
+
+
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">5%</em> <sub class="p-sub preco-antigo">R$99,00</sub>
+                            <b class="p-b preco-novo"> R$94,50</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/gloss.svg" alt="maquiagem gloss " />
+                        <h2 class="descricao__titulo-produto">Brilho Radiante: Gloss Lumière</h2>
+                        <p class="descricao__texto-produto">
+                            Com sua fórmula exclusiva, o Gloss Lumière proporciona um acabamento suave e sedoso,
+                            enquanto adiciona um toque de luminosidade aos seus lábios. Seja para um visual casual
+                            durante o dia ou uma noite de glamour, este gloss é o companheiro perfeito para realçar sua
+                            beleza natural.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">30%</em> <sub class="p-sub preco-antigo">R$59,00</sub>
+                            <b class="p-b preco-novo"> R$41,30</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/gloss2.svg" alt="maquiagem gloss" />
+                        <h2 class="descricao__titulo-produto">Brilho Radiante: Gloss Lumière Gold</h2>
+                        <p class="descricao__texto-produto">
+                            Prepare-se para iluminar seus lábios com o novo Gloss Lumière Gold, uma verdadeira revolução
+                            no mundo da beleza. Este gloss não é apenas um produto de maquiagem; é um convite para
+                            elevar sua confiança e expressar sua verdadeira essência com cada toque de brilho.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">30%</em> <sub class="p-sub preco-antigo">R$59,00</sub>
+                            <b class="p-b preco-novo"> R$41,30</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/kit-base.svg" alt="kit de base e corretivos" />
+                        <h2 class="descricao__titulo-produto">Introduzindo: PerfectBlend Duo</h2>
+                        <p class="descricao__texto-produto">
+                            Dentro de um compacto e elegante estojo, reside a essência da confiança e da beleza. O Kit
+                            Perfeição Total é mais do que apenas maquiagem; é um ritual de transformação, uma jornada
+                            para aprimorar sua beleza natural.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">10%</em> <sub class="p-sub preco-antigo">R$229,00</sub>
+                            <b class="p-b preco-novo"> R$206,10</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/locao-corpo.svg" alt="loção corpo" />
+                        <h2 class="descricao__titulo-produto">Suavité:<br> A Elixir da Pele</h2>
+                        <p class="descricao__texto-produto">
+                            Com Seda Suave, sua pele nunca foi tão bem cuidada e mimada. Experimente a sensação de luxo
+                            todos os dias com nossa loção corporal encantadora. Transforme sua rotina de cuidados com o
+                            corpo em um momento de indulgência com Seda Suave: o segredo para uma pele irresistivelmente
+                            sedosa e radiante.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">10%</em> <sub class="p-sub preco-antigo">R$129,00</sub>
+                            <b class="p-b preco-novo"> R$116,10</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide">
+                        <img src="./assets/produtos/remover-make.svg" alt="removedor de maquiagem" />
+                        <h2 class="descricao__titulo-produto">Uma Pele Radiante: LumièreCleanse </h2>
+                        <p class="descricao__texto-produto">
+                            Descubra o segredo das celebridades e dos especialistas em beleza com LumièreCleanse.
+                            Transforme sua rotina de cuidados com a pele e revele uma aparência radiante e impecável
+                            todos os dias.
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">25%</em> <sub class="p-sub preco-antigo">R$99,00</sub>
+                            <b class="p-b preco-novo"> R$74,25</b>
+                        </p>
+                    </div>
+                    <div class="swiper-slide texto-slide ">
+                        <img src="./assets/produtos/skin-care.svg" alt="skin care" />
+                        <h2 class="descricao__titulo-produto">Introduzindo: "SerenityGlow"</h2>
+                        <p class="descricao__texto-produto">
+                            Diga adeus à pele opaca e estressada. Deixe SerenityGlow ser sua jornada diária para uma
+                            pele radiante e uma mente tranquila. Experimente o brilho da serenidade hoje mesmo!
+                        </p>
+                        <p class="precos-container">
+                            <em class="p-em porcentagem">15%</em> <sub class="p-sub preco-antigo">R$199,00</sub>
+                            <b class="p-b preco-novo"> R$169,15</b>
+                        </p>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <!-- primeira linha -->
+                <div class="card__descricao">
+                    <!-- primeira coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Presenteie-se</h3>
+                        <h2 class="descricao__titulo-produto">Floral Éclat</h2>
+                        <p class="descricao__texto">Desvende os segredos de um jardim encantado, onde as flores dançam
+                            ao ritmo suave da brisa primaveril. Apresentamos o mais novo perfume floral, uma sinfonia
+                            delicada de aromas que captura a essência efêmera da beleza floral.<br></p>
+                    </div>
+                    <!-- segunda coluna -->
+                    <img src="./assets/banners/produto4.svg" alt="pergume feminino" class="card__descricao-imagem">
+                </div>
+                <!-- 2 linha -->
+                <div class="card__botoes">
+                    <!-- 1ª coluna -->
+                    <p class="card__preco"><br>R$279,99</p>
+                    <ul class="botoes">
+                        <li class="botoes__item"> <img src="./assets/favoritos.svg" alt="favoritar produto"></li>
+                        <li class="botoes__item"> <img src="./assets/compras.svg" alt="comprar produto"></li>
+                    </ul>
+                    <!-- 2ªcoluna -->
+                    <a href="#" class="botao__ancora">Compre agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Receba nossas ofertas por email</h2>
+            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+        </div>
+
+        <div class="lista__sociais">
+            <h2 class="contato__titulo-redes">Siga-nos em nossas redes sociais:</h2>
+            <ul class="lista__contato-sociais">
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"> <img src="./assets/redes/facebook.svg"
+                            alt="link facebook" class="lista__contato-img"></a>
+                </li>
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"> <img src="./assets/redes/instagram.svg"
+                            alt="link instagram" class="lista__contato-img"></a>
+                </li>
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"><img src="./assets/redes/twitter.svg"
+                            alt="link twitter" class="lista__contato-img"></a>
+                </li>
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"> <img src="./assets/redes/youtube.svg"
+                            alt="link youtube" class="lista__contato-img"></a>
+                </li>
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"> <img src="./assets/redes/twitch.svg"
+                            alt="link twitch" class="lista__contato-img"></a>
+                </li>
+                <li class="lista__contato-sociais__item">
+                    <a href="#" class="lista__contato-sociais__link"> <img src="./assets/redes/discord.svg"
+                            alt="link discord" class="lista__contato-img"></a>
+            </ul>
+
+        </div>
+    </section>
+    <hr />
+
+    <footer class="rodape">
+        <div class="contato__descricao2">
+
+            <p class="contato__texto">© 2024 Shiki Beauty. Todos os direitos reservados.
+
+                Todas as marcas registradas, nomes de produtos, logotipos e marcas de serviço mencionados neste site são
+                de propriedade de seus respectivos proprietários. O uso deles não implica nenhuma afiliação ou endosso
+                por parte da Shiki Beauty, a menos que seja explicitamente declarado. </p>
+        </div>
+
+        <h2 class="rodape__titulo">Shiki Beauty</h2>
+        <a href="#" class="rodape__licenca"> Termos de Serviço </a>
+        <a href="#" class="rodape__licenca"> Política de Privacidade </a>
+        <a href="#" class="rodape__licenca"> Política de Reembolso da Loja </a>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
@@ -164,9 +437,35 @@
             autoplay: {
                 delay: 2000,
             },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 
-        });</script>
-
+    <script>
+        const swiperCategories = new Swiper('.swiper-categories', {
+            speed: 500,
+            spaceBetween: 20,
+            slidesPerView: 4,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <script>
+        const swiperShop = new Swiper('.swiper-shop', {
+            speed: 500,
+            spaceBetween: 20,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>

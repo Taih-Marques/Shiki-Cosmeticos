@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
 @import url(./style/header.css);
 @import url(./style/banner.css);
+@import url(./style/categories.css);
+@import url(./style/shop.css);
+@import url(./style/contato.css);
+@import url(./style/rodape.css);
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
 
 :root {
     --cor-de-fundo: #f5f5f5;
@@ -9,13 +13,14 @@
     --cor-de-titulo: rgb(247, 127, 227);
     --cor-de-fonte:rgb(41, 0, 39);
     --cor-secundaria:rgb(36, 11, 27);
-    --cor-de-link: rgb(138, 17, 47);
+    --cor-de-link: rgb(21, 135, 82);
     --branco: rgb(255, 255, 255);
     --preto: rgb(0, 0, 0);
 
     --fonte-primaria: "Headland One";
     --fonte-secundaria: "Noto Sans";
     --fonte-terciaria:"Ysabeau SC";
+   
 }
 
 body {

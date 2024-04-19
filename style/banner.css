@@ -29,26 +29,35 @@
 
 .swiper-slide img{
     width: 100%;
-   
+
+}
+.texto-banner{
+    background: var(--cor-de-fundo-destaque);
+    margin-bottom: 1em;
 }
 .banner__texto{
-    font-family: var(--fonte-secundaria);
-    background: var(--cor-gradiente);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-family: var(--fonte-secundaria);  
+    color: var(--cor-de-fonte);  
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 1em 1em;
     margin: 1em 0;
     text-align: center;
     z-index: 1;
-    
+    text-transform: uppercase;
 }
-
 .banner__texto-destaque{
     font-weight: 500;
 }
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+    
+}
+
 @media screen and (min-width: 1024px) {
     .banner__pesquisa{
         width: 50%;
@@ -59,7 +68,15 @@
     .banner__pesquisa::placeholder{
         background-position: 10em;
     }
+    .banner__texto{
+        background-color: var(--cor-de-fundo-destaque);
+    }
     
+    .card{
+        width: 70%;
+        height: 30%;
+    }
+
 }
 
 @media screen and (min-width:1428px){
