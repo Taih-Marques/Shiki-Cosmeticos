@@ -1,4 +1,19 @@
+.cabecalho {
+    display: grid; 
+    background-color: var(--cor-de-fundo-destaque);
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.5fr 1.7fr 0fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "destaque destaque destaque"
+        "middle-header middle-header middle-header"
+        "bottom-header__categorias bottom-header__categorias bottom-header__categorias"; 
+    height: 100%; 
+}
+
 .destaque{
+    grid-area: destaque;
     background-color: var(--cor-de-link);
     padding: 0.5em;
     text-align: center;
@@ -18,6 +33,20 @@
     font-size: 12px;
     text-decoration: none;
 }
+
+/* MENU HAMBURGUER E BOTTOM HEADER CONTAINER */
+.middle-header {
+    display: grid; 
+    grid-template-columns: 0.5fr 2fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "container-menu middle-header__logo middle-header__usuario"
+      "container-menu middle-header__logo middle-header__usuario"
+      "container-menu middle-header__logo middle-header__usuario"; 
+    grid-area: middle-header; 
+  }
+
 .cabecalho__menu-hamburguer {
     width: 18px;
     height: 18px;
@@ -34,31 +63,23 @@
     background: var(--cor-gradiente);
 }
 
-.cabecalho {
-    background-color: var(--cor-de-fundo-destaque);
-    display: flex;
-    justify-content: space-between;
+.container-menu {
+    display: block;
     align-items: center;
-    position: relative;
-}
-
-.container {
-    display: flex;
-    align-items: center;
+    grid-area: container-menu;
 }
 
 .container__imagem {
-    padding: 0.3em;
-    width: 44px;
-    height: 44px;
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+   
 
 }
-
 .container__imagem-perfil2{
     padding: 0;
     width: 22px;
-    height: 22px;
-    
+    height: 22px;  
 }
 .meu-perfil {  
     background: var(--cor-de-fundo-destaque);
@@ -68,38 +89,12 @@
     color: var(--cor-de-fonte);
 }
 
-.container__imagem-logo {
-    width: 44px;
-    height: 44px;
-    padding: 1em;
-}
-.container__imagem-compras{
-    width: 55px;
-    height: 55px;
-    padding: 1em, 0;
-}
-.container__imagem-fav{
-    padding: 1em, 0%;
-}
-.container__titulo, .container__titulo--negrito{
-    font-family: var(--fonte-terciaria);
-    color:var(--cor-de-titulo);
-    font-size: 20px;
-    display: inline-block;
-    text-align: center
-}
-.container__titulo{
-    font-weight: 400;
-}
-.container__titulo--negrito{
-    font-weight: 700;
-}
 .lista-menu {
     position: absolute;
     display: none;
-    top: 100%;
     width: 60vw;
     z-index: 3;
+    padding-top: 0.5em;
 }
 
 .container__botao:checked~.lista-menu {
@@ -127,6 +122,47 @@
     text-transform: uppercase;
     padding: 0.5em;
 }
+.bottom-header__categorias { 
+    grid-area: bottom-header__categorias; 
+    background-color: var(--cor-de-fonte);
+}
+
+/* CONTAINER DO MEIO (LOGO E BOTOES DE USUARIO*/
+.middle-header__logo { 
+    grid-area: middle-header__logo;
+    display: flex;
+}
+.middle-header__usuario {
+     grid-area: middle-header__usuario;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.container__imagem-logo {
+    width: 44px;
+    height: 44px;
+}
+.container__imagem-compras{
+    width: 40px;
+    height: 40px;
+   
+}
+
+.container__titulo, .container__titulo--negrito{
+    font-family: var(--fonte-terciaria);
+    color:var(--cor-de-titulo);
+    font-size: 20px;
+    display: inline-block;
+    text-align: center
+}
+.container__titulo{
+    font-weight: 400;
+    padding: 0.9em 0 .1em 0.2em;
+}
+.container__titulo--negrito{
+    font-weight: 700;
+}
 
 .container__botao {
     display: none;
@@ -142,7 +178,31 @@
 .container__imagem-perfil{
     display: none;
 }
+.header__pesquisa{
+    display: none;
+}
 @media screen and (min-width: 1024px) {
+    .header__pesquisa{
+        display: block;
+    }
+    .cabecalho{
+        grid-template-rows: 0.4fr 1fr 0.5fr;
+    }
+    .middle-header{
+        grid-template-columns: 0fr 4fr 0.5fr;
+        padding: 1em;
+        align-items: end;
+    }
+    .middle-header__logo{
+        display: grid; 
+        grid-template-columns: 0fr 2fr 5fr 0fr;
+        grid-template-rows: 0fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "container__imagem-logo container__titulo banner__pesquisa"; 
+      grid-area: middle-header__logo; 
+
+    }
     .meu-perfil{
         display: none;
     }
@@ -155,36 +215,61 @@
     .opcoes__botao{
         display: none;
     }
+    .container__imagem {
+        padding: 0;
+    }
+    .container__imagem-logo{
+        grid-area: container__imagem-logo;
+        width: 60px;
+        height: 60px;
+        
+    }
     .container__imagem-perfil{
         display: block;
     }
     .container__titulo, .container__titulo--negrito{
         font-size: 32px;
-        text-align: center
-    }
-    .container__imagem-compras{
-        width: 80px;
-        height: 80px;
+        text-align: justify;
+        grid-area: container__titulo;
         
-        margin: 1em;
+    }
+    .container__titulo{
+        padding: 0.4em 0 .1em 0em;
+    }
+    .container__titulo--negrito{
+        padding-left: 0.2em;
+    }
+    .header__pesquisa{
+         grid-area: banner__pesquisa;
+         width: 100%;
+         height: 70%;
+         padding: 1em;
+    }
+    .middle-header__usuario{
+        padding-bottom: 0.7em;
     }
     .container__banner{
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
     .opcoes{
         display: flex;
-        padding-top: 1em;
+        list-style-type: none;
+        justify-content: space-between;
+        height: 80%;
+        width: 100%;
 
     }
     .opcoes__item{
         padding: 0 1em;
         text-transform: uppercase;
-        color: var(--cor-de-titulo);
+        font-family: var(--fonte-secundaria);
     }
     .opcoes__link{
         text-decoration: none;
-        color: var(--cor-de-titulo);
+        color: var(--branco);
+        white-space: nowrap;
+        font-size: 14px;
     }
     
     .opcoes__botao:checked ~ .lista-menu{
@@ -212,9 +297,7 @@
     .meu-perfil{
         display: none;
     }
-    .container__imagem-perfil{
-        display: block;
-    }
+   
     .container__texto{
         display: block;
     }
@@ -223,6 +306,7 @@
         align-items: center;
         text-decoration: none;
         color: var(--cor-de-fonte);
+        
     }
     .cabecalho{
         padding: 0em 2em;

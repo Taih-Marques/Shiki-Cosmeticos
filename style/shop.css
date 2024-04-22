@@ -43,7 +43,10 @@
     grid-area: preco-novo;
     font-size: 14px;
 }
-
+.card{
+    font-weight: 400;
+    text-align: left;
+}
 .card__descricao-imagem{
     width: 50%;
     
@@ -52,6 +55,9 @@
     background-color: var(--cor-de-fundo);
     padding: 1em;
     box-sizing: border-box;
+}
+.texto_tablet{
+    font-size: 12px;
 }
 .descricao__titulo-produto{
     font-size: .8125rem;
@@ -78,7 +84,7 @@
     }
 
     .swiper-pagination{
-        margin: 2em 0 3em 0;
+        margin: 1em 0 1em 0;
         border: white;
     }
     .swiper{
@@ -87,6 +93,7 @@
     .card2{
         width: 50%;
         margin: 2em auto;
+        
     }
     .p-em{
         font-size: 26px;
@@ -97,6 +104,14 @@
     .p-b{
         font-size: 24px;
     }
+    .descricao__titulo-produto{
+        font-size: 22px;
+    }
+    .shop{
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    
 }
 @media screen and (min-width:1428px) {
     .carrossel__container{
