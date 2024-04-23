@@ -79,20 +79,22 @@
 }
 
 @media screen and (min-width:1428px){
-    .banner__pesquisa{
-        width: 35%;
-    }
     .banner__pesquisa::placeholder {
         font-size: 20px;
-        background-position: 29em;
+        background-position: 4em;
         color: var(--cor-de-link);
+        text-align: center;
+        align-items: center;
     }
     .container__banner-img{
         width: 100vw;
         height: 80vh;
     }
     .banner__texto{
-        padding: 1em 15em;
-        font-size: 26px;
+        padding: 0.5em;
+        font-size: 20px;
+    }
+    .texto-banner{
+        margin: 0 8em;
     }
 }

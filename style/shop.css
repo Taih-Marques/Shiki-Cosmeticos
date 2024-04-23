@@ -78,6 +78,12 @@
     overflow: hidden;
     
 }
+.imagem__banner-final{
+    width: 100%;
+    background-color: var(--cor-de-fundo-destaque);
+    padding: 1em 0;
+
+}
 @media screen and (min-width: 1024px) {
     .carrossel__titulo{
         font-size: 26px;
@@ -113,7 +119,15 @@
     }
     
 }
+@media screen and (min-width: 25em){
+    html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+  }
+  
 @media screen and (min-width:1428px) {
+    .shop{
+        margin: 0 5.3em;
+       
+    }
     .carrossel__container{
         display: flex;
         margin: 0 10vw 3em 10vw;
@@ -125,11 +139,13 @@
         margin: 1em 0;
     }
     .swiper{
-        width: 70%;
+        width: 80%;
     }
-    
     .descricao__titulo{
         font-size: 32px;
+    }
+    .descricao__titulo-produto{
+        line-height: .5rem;
     }
     .descricao__texto{
         padding-top: 1em;
@@ -139,15 +155,46 @@
         font-size: 26px;
     }
    .botao__ancora{
-    font-size: 18px;
-    padding: 0 1.6vw;
+    padding: 1vw 1vw;
     display: flex;
     align-items: center;
     text-align: center;
    }
    .botao__ancora2{
-    padding: 0 4.9vw;
+    padding: 0 2.5vw;
    }
     
-    
+    .card2{
+        width: 30%;
+    }
+    .card-pc{
+        width: 40%;
+    }
+    .descricao__titulo-produto{
+        font-size: 14px
+    }
+    .descricao__texto-produto{
+        font-size: 10px;
+        text-transform: none;
+        line-height: .35rem;
+        margin-bottom:.5em ;
+    }
+    .p-em {
+        font-size: 16px;
+    }
+    .p-sub {
+        font-size: 10px;
+    }
+    .p-b {
+        font-size: 18px;
+    }
+    .titulo__banner{
+        padding-top: 2em;
+    }
+    .imagem__banner-final{
+        width: 83%;
+        height: 30vw;
+        margin: 0 8em;
+        background-color: var(--cor-de-fundo-destaque);
+    }
 }

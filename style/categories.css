@@ -123,6 +123,10 @@
         font-size: 18px;
         top: 200px;
     }
+    .botoes{
+        padding: 0;
+        width: auto;
+    }
     .botoes__card {
         width: 50px;
         padding: 0 .5em;
@@ -132,5 +136,18 @@
     }
     .botao__ancora{
         padding: 1.8em;
+    }
+    .botao__ancora2{
+        padding: 1vw 5vw;
+       }
+}
+
+@media screen and (min-width: 1428px){
+    .categorias{
+        margin: 0 8em;
+    }
+    .etiqueta{
+        font-size: 20px;
+        top: 180px;
     }
 }

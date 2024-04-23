@@ -67,17 +67,17 @@
                 <a href="#" class="container__link">
                     <img src="./assets/favoritos.svg " alt="Meus favoritos"
                         class="container__imagem container__imagem-fav" />
-                    <p class="container__texto">Meus Favoritos</p>
+                    <p class="container__texto">Favoritos</p>
                 </a>
                 <a href="#" class="container__link">
                     <img src="./assets/compras.svg " alt="Minhas compras"
                         class="container__imagem container__imagem-compras" />
-                    <p class="container__texto">Minha sacola</p>
+                    <p class="container__texto">Sacola</p>
                 </a>
                 <a href="#" class="container__link">
                     <img src="./assets/usuario.svg " alt="Meu perfil"
                         class="container__imagem container__imagem-perfil" />
-                    <p class="container__texto">Meu perfil</p>
+                    <p class="container__texto">Perfil</p>
                 </a>
             </div>
         </div>
@@ -199,7 +199,7 @@
                             alt="colocar no carrinho o produto"></li>
                 </ul>
                 <!-- 2ªcoluna -->
-                <a href="#" class="botao__ancora botao__ancora2">Comprar agora!!</a>
+                <a href="#" class="botao__ancora">Comprar agora!!</a>
             </div>
         </div>
         </div>
@@ -210,7 +210,7 @@
             <div class="swiper-shop">
                 <div class="swiper-pagination"></div>
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper shop-pc">
                     <!-- Slides -->
                     <div class="swiper-slide texto-slide">
                         <img src="./assets/produtos/base.svg" alt="base de pele" />
@@ -337,7 +337,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-            <div class="card card2">
+            <div class="card card2 card-pc">
                 <!-- primeira linha -->
                 <div class="card__descricao">
                     <!-- primeira coluna -->
@@ -363,10 +363,17 @@
                                 alt="comprar produto"></li>
                     </ul>
                     <!-- 2ªcoluna -->
-                    <a href="#" class="botao__ancora">Compre agora</a>
+                    <a href="#" class="botao__ancora botao__ancora2">Compre agora</a>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="banners__finais">
+        <div class="banner__final">
+            <h2 class="shop titulo__banner"> Fragrância para marcar presença</h2>
+            <img src="./assets/banners/banner-final.svg" alt="pergume feminino destacado" class="imagem__banner-final">
+        </div>
+
     </section>
     <section class="contato">
         <div class="contato__descricao">
@@ -439,15 +446,22 @@
     </script>
 
     <script>
-        const swiperCategories = new Swiper('.swiper-categories', {
-            speed: 500,
-            spaceBetween: 20,
-            slidesPerView: 4,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-            },
-        });
+        function criarSlide2(query) {
+            let slidesPerView = 4;
+            if (query.matches) {
+                console.log('Media Query Matched!')
+                slidesPerView = 5;
+            }
+            const swiperCategories = new Swiper('.swiper-categories', {
+                speed: 500,
+                spaceBetween: 20,
+                slidesPerView: slidesPerView,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        }
     </script>
     <script>
         function criarSlide(query) {
@@ -467,6 +481,24 @@
                 },
             });
         }
+        function criarSlide3(query) {
+            let slidesPerView = 2;
+            if (query.matches) {
+                console.log('Media Query Matched!')
+                slidesPerView = 5;
+            }
+
+            const swiperShop = new Swiper('.swiper-shop', {
+                speed: 500,
+                spaceBetween: 20,
+                slidesPerView: slidesPerView,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        }
+
 
         // Create a media condition that targets viewports at least 768px wide
         const mediaQuery = window.matchMedia('(min-width: 1024px)')
@@ -474,6 +506,20 @@
         criarSlide(mediaQuery);
         mediaQuery.addEventListener("change", function () {
             criarSlide(mediaQuery);
+        });
+
+        const mediaQuery2 = window.matchMedia('(min-width: 1428px)')
+
+        criarSlide2(mediaQuery);
+        mediaQuery2.addEventListener("change", function () {
+            criarSlide2(mediaQuery2);
+        });
+
+        const mediaQuery_shop = window.matchMedia('(min-width: 1428px)')
+
+        criarSlide3(mediaQuery_shop);
+        mediaQuery_shop.addEventListener("change", function () {
+            criarSlide2(mediaQuery_shop);
         });
     </script>
 </body>

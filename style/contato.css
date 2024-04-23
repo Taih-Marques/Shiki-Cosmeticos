@@ -76,7 +76,6 @@
         flex-basis: 100%;
     }
     .lista__contato-img{
-        filter: invert(100%); 
         padding: 0.5em;
         
     }

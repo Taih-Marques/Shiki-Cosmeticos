@@ -294,12 +294,20 @@
 }
 
 @media screen and (min-width: 1428px) {
+    .destaque{
+        margin: 0 8em;
+    }
+
     .meu-perfil{
         display: none;
+    }
+    .container__imagem-fav {
+        display: block;
     }
    
     .container__texto{
         display: block;
+        padding: .5em;
     }
     .container__link{
         display: flex;
@@ -308,11 +316,17 @@
         color: var(--cor-de-fonte);
         
     }
-    .cabecalho{
-        padding: 0em 2em;
-    }
+   
     .opcoes{
         margin-right: auto;
     }
+    .middle-header{
+        align-items:center;
+        padding: 0 8em;
+    }
+    .middle-header__usuario {
+        padding: 0 .5em;
+    }
+
   
 }

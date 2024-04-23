@@ -105,12 +105,16 @@ menu,
 nav,
 section {
     display: block;
+    margin-bottom: 1em;
+    overflow-x: hidden;
 }
 
+html{
+    overflow-x: hidden;
+}
 body {
     line-height: 1;
 }
-
 ol,
 ul {
     list-style: none;
