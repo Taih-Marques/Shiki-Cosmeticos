@@ -4,8 +4,7 @@ Este é um modelo de site de venda de cosméticos desenvolvido como parte do pro
 
 Confira a demonstração do projeto: [Shiki-Beauty](https://shiki-cosmeticos.vercel.app)
 
-![Capa do projeto](https://shiki-cosmeticos-f9610mm8q-tainah-marques-projects.vercel.app/)
-
+![Capa do projeto](image.png)
 
 ## Ferramentas utilizadas:
 
