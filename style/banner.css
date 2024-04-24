@@ -81,10 +81,13 @@
 @media screen and (min-width:1428px){
     .banner__pesquisa::placeholder {
         font-size: 20px;
-        background-position: 4em;
+        background-position: 2em;
         color: var(--cor-de-link);
         text-align: center;
         align-items: center;
+    }
+    .banner__pesquisa{
+        width: 80%;
     }
     .container__banner-img{
         width: 100vw;

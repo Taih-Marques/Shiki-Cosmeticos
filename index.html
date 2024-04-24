@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div class="bottom-header__categorias opcoes">
+        <ul class="bottom-header__categorias opcoes">
             <li class="opcoes__item"><a href="#" class="opcoes__link">Lançamentos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Promoção</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Presentes</a></li>
@@ -92,8 +92,8 @@
             <li class="opcoes__item"><a href="#" class="opcoes__link">Cabelos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Skincare</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Unhas</a></li>
-            </ul>
-        </div>
+        </ul>
+
 
     </header>
     <section class="banner-shop">
@@ -180,7 +180,8 @@
                     <h3 class="descricao__titulo">Novidade na area</h3>
                     <h2 class="descricao__titulo-produto">Verde Sereno: A Essência Revigorante de Aloe
                         Vera</h2>
-                    <p class="descricao__texto">Na serenidade de um jardim tranquilo, nasce uma fragrância que celebra a
+                    <p class="descricao__texto texto_tablet">Na serenidade de um jardim tranquilo, nasce uma fragrância
+                        que celebra a
                         natureza em sua forma mais pura. Apresentamos o novo oleo corporal Verde Sereno, uma ode à
                         beleza
                         calmante e revitalizante da Aloe Vera.<br></p>
@@ -519,7 +520,7 @@
 
         criarSlide3(mediaQuery_shop);
         mediaQuery_shop.addEventListener("change", function () {
-            criarSlide2(mediaQuery_shop);
+            criarSlide3(mediaQuery_shop);
         });
     </script>
 </body>
